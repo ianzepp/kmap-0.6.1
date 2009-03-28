@@ -1,0 +1,435 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 1999-11-04 23:58-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+
+#: kmap.cpp:101
+msgid "Ready"
+msgstr ""
+
+#: kmap.cpp:107
+msgid "Saving session"
+msgstr ""
+
+#: scanview.cpp:25
+msgid "Address"
+msgstr ""
+
+#: scanview.cpp:26
+msgid "Port"
+msgstr ""
+
+#: scanview.cpp:27
+msgid "State"
+msgstr ""
+
+#: scanview.cpp:28
+msgid "Protocol"
+msgstr ""
+
+#: scanview.cpp:29
+msgid "Service"
+msgstr ""
+
+#: treeview.cpp:27
+msgid "The Problem"
+msgstr ""
+
+#: treeview.cpp:28
+msgid "The Solution"
+msgstr ""
+
+#: treeview.cpp:137
+msgid "Open TCP ports:"
+msgstr ""
+
+#: treeview.cpp:145
+msgid "Open UDP ports:"
+msgstr ""
+
+#: treeview.cpp:153
+msgid "Unknown-type ports:"
+msgstr ""
+
+#: treeview.cpp:200
+msgid "IP address did not resolve"
+msgstr ""
+
+#: treeview.cpp:202
+msgid "IP address resolved to: "
+msgstr ""
+
+#: treeview.cpp:210
+msgid "Sequence class: "
+msgstr ""
+
+#: treeview.cpp:219
+msgid "Sequence difficulty: "
+msgstr ""
+
+#: treeview.cpp:228
+msgid "Sequence numbers: "
+msgstr ""
+
+#: treeview.cpp:237
+msgid "Remote OS: "
+msgstr ""
+
+#: treeview.cpp:246
+msgid "Unknown OS: "
+msgstr ""
+
+#: treeview.cpp:247
+msgid "No OS matches for host"
+msgstr ""
+
+#: nmapview.cpp:24
+msgid "Save to log:"
+msgstr ""
+
+#: nmapview.cpp:30 opt_path.cpp:23
+msgid "Browse"
+msgstr ""
+
+#: nmapview.cpp:114
+msgid "Error: No filename given"
+msgstr ""
+
+#: nmapview.cpp:115
+msgid "No filename was given. Please choose a filename first."
+msgstr ""
+
+#: nmapview.cpp:122
+msgid "Error: No text to save"
+msgstr ""
+
+#: nmapview.cpp:123
+msgid "No text in the output window to save"
+msgstr ""
+
+#: nmapview.cpp:131
+msgid "Error: Unable to save"
+msgstr ""
+
+#: nmapview.cpp:132
+msgid "Unable to save: write permission denied"
+msgstr ""
+
+#: nmapview.cpp:138
+msgid "Error: Write error"
+msgstr ""
+
+#: nmapview.cpp:139
+msgid "Write error: unknown error"
+msgstr ""
+
+#: nmapview.cpp:147
+msgid "File saved"
+msgstr ""
+
+#: nmapview.cpp:148
+msgid "Successfully saved output text"
+msgstr ""
+
+#: mainview.cpp:23
+msgid "Hostname:"
+msgstr ""
+
+#: mainview.cpp:24
+msgid "Arguments:"
+msgstr ""
+
+#: mainview.cpp:29 mainview.cpp:129
+msgid "Start"
+msgstr ""
+
+#: mainview.cpp:32
+msgid "Port Listing"
+msgstr ""
+
+#: mainview.cpp:35
+msgid "OS Ident"
+msgstr ""
+
+#: mainview.cpp:38
+msgid "Nmap Output"
+msgstr ""
+
+#: optiontree.cpp:60
+msgid "File Options"
+msgstr ""
+
+#: optiontree.cpp:63 optiontree.cpp:131
+msgid "Nmap path"
+msgstr ""
+
+#: optiontree.cpp:64 optiontree.cpp:137
+msgid "Logging"
+msgstr ""
+
+#: optiontree.cpp:66
+msgid "Scan Options"
+msgstr ""
+
+#: optiontree.cpp:70 optiontree.cpp:113
+msgid "Stealth"
+msgstr ""
+
+#: optiontree.cpp:71 optiontree.cpp:119
+msgid "Setup decoys"
+msgstr ""
+
+#: optiontree.cpp:72 optiontree.cpp:107
+msgid "Setup pings"
+msgstr ""
+
+#: optiontree.cpp:73 optiontree.cpp:101
+msgid "Scan type"
+msgstr ""
+
+#: optiontree.cpp:75 optiontree.cpp:95
+msgid "Recent args"
+msgstr ""
+
+#: optiontree.cpp:76 optiontree.cpp:89
+msgid "Recent hosts"
+msgstr ""
+
+#: optionstack.cpp:39
+msgid "Defaults"
+msgstr ""
+
+#: opt_scan.cpp:27
+msgid "Normal-user scans:"
+msgstr ""
+
+#: opt_scan.cpp:30
+msgid "Root-only scans:"
+msgstr ""
+
+#: opt_scan.cpp:33
+msgid "Ftp-server bounce:"
+msgstr ""
+
+#: opt_scan.cpp:37
+msgid "TCP connect() scan"
+msgstr ""
+
+#: opt_scan.cpp:38
+msgid "TCP ping scan"
+msgstr ""
+
+#: opt_scan.cpp:39
+msgid "TCP/UDP rcp scan"
+msgstr ""
+
+#: opt_scan.cpp:42
+msgid "TCP syn (half-open) scan"
+msgstr ""
+
+#: opt_scan.cpp:43
+msgid "TCP fin scan"
+msgstr ""
+
+#: opt_scan.cpp:44
+msgid "TCP Xmas tree scan"
+msgstr ""
+
+#: opt_scan.cpp:45
+msgid "TCP null packet scan"
+msgstr ""
+
+#: opt_scan.cpp:46
+msgid "UDP scan"
+msgstr ""
+
+#: opt_scan.cpp:50
+msgid "Try to guess remote host's OS"
+msgstr ""
+
+#: opt_ping.cpp:22
+msgid "Available ping options:"
+msgstr ""
+
+#: opt_ping.cpp:25
+msgid "Don't ping the target host"
+msgstr ""
+
+#: opt_ping.cpp:26
+msgid "Use TCP ping instead of ICMP"
+msgstr ""
+
+#: opt_ping.cpp:27
+msgid "Use ICMP ping instead of TCP"
+msgstr ""
+
+#: opt_ping.cpp:28
+msgid "Use TCP & ICMP in parallel"
+msgstr ""
+
+#: opt_ping.cpp:31
+msgid "Set TCP ping to port:"
+msgstr ""
+
+#: opt_ping.cpp:36
+msgid "Use SYN instead of ACK for TCP packets"
+msgstr ""
+
+#: opt_path.cpp:21
+msgid "Nmap executable:"
+msgstr ""
+
+#: opt_argshist.cpp:25 opt_argshist.cpp:26 opt_decoy.cpp:24 opt_decoy.cpp:25
+msgid "<undef>"
+msgstr ""
+
+#: opt_hosthist.cpp:66
+msgid "No hostnames have been selected"
+msgstr ""
+
+#: opt_hosthist.cpp:74
+msgid "Use hostname"
+msgstr ""
+
+#: opt_hosthist.cpp:80
+msgid "No hostnames are available"
+msgstr ""
+
+#: opt_argshist.cpp:66
+msgid "No arguments have been selected"
+msgstr ""
+
+#: opt_argshist.cpp:74
+msgid "Use arguments"
+msgstr ""
+
+#: opt_argshist.cpp:80
+msgid "No arguments are available"
+msgstr ""
+
+#: opt_log.cpp:21
+msgid "Log in human format"
+msgstr ""
+
+#: opt_log.cpp:22
+msgid "Log in machine format"
+msgstr ""
+
+#: opt_stealth.cpp:21
+msgid "Nmap-defined modes"
+msgstr ""
+
+#: opt_stealth.cpp:22
+msgid "User-defined modes"
+msgstr ""
+
+#: opt_stealth.cpp:25
+msgid "Paranoid"
+msgstr ""
+
+#: opt_stealth.cpp:26
+msgid "Sneaky"
+msgstr ""
+
+#: opt_stealth.cpp:27
+msgid "Polite"
+msgstr ""
+
+#: opt_stealth.cpp:28
+msgid "Normal"
+msgstr ""
+
+#: opt_stealth.cpp:29
+msgid "Aggressive"
+msgstr ""
+
+#: opt_stealth.cpp:30
+msgid "Insane"
+msgstr ""
+
+#: opt_stealth.cpp:32
+msgid "Single host timeout (ms)"
+msgstr ""
+
+#: opt_stealth.cpp:33
+msgid "Maximum retransmit timeout (ms)"
+msgstr ""
+
+#: opt_stealth.cpp:34
+msgid "Initial retransmit timeout (ms)"
+msgstr ""
+
+#: opt_stealth.cpp:35
+msgid "Maximum # of parallel scans"
+msgstr ""
+
+#: opt_stealth.cpp:36
+msgid "Minimum delay between probes (ms)"
+msgstr ""
+
+#: opt_misc.cpp:21
+msgid "Use TCP reverse ident scanning"
+msgstr ""
+
+#: opt_misc.cpp:22
+msgid "Use fast scanning method (services only)"
+msgstr ""
+
+#: opt_misc.cpp:23
+msgid "Specify a port range:"
+msgstr ""
+
+#: opt_misc.cpp:24
+msgid "Fragment SYN/FIN/XMAS/NULL headers"
+msgstr ""
+
+#: opt_misc.cpp:26
+msgid "Enable verbosity"
+msgstr ""
+
+#: opt_misc.cpp:27
+msgid "Enable debug"
+msgstr ""
+
+#: opt_misc.cpp:30
+msgid "Level 1 verbose"
+msgstr ""
+
+#: opt_misc.cpp:31
+msgid "Level 2 verbose"
+msgstr ""
+
+#: opt_misc.cpp:32
+msgid "Level 3 verbose"
+msgstr ""
+
+#: opt_misc.cpp:33
+msgid "Level 4 verbose"
+msgstr ""
+
+#: opt_misc.cpp:36
+msgid "Level 1 debug"
+msgstr ""
+
+#: opt_misc.cpp:37
+msgid "Level 2 debug"
+msgstr ""
+
+#: opt_misc.cpp:38
+msgid "Level 3 debug"
+msgstr ""
+
+#: opt_misc.cpp:39
+msgid "Level 4 debug"
+msgstr ""

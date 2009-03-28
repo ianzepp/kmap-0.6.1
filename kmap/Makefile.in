@@ -1,0 +1,556 @@
+# Makefile.in generated automatically by automake 1.4 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+####### kdevelop will overwrite this part!!! (begin)##########
+
+
+SHELL = @SHELL@
+
+srcdir = @srcdir@
+top_srcdir = @top_srcdir@
+VPATH = @srcdir@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+
+bindir = @bindir@
+sbindir = @sbindir@
+libexecdir = @libexecdir@
+datadir = @datadir@
+sysconfdir = @sysconfdir@
+sharedstatedir = @sharedstatedir@
+localstatedir = @localstatedir@
+libdir = @libdir@
+infodir = @infodir@
+mandir = @mandir@
+includedir = @includedir@
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/@PACKAGE@
+pkglibdir = $(libdir)/@PACKAGE@
+pkgincludedir = $(includedir)/@PACKAGE@
+
+top_builddir = ..
+
+ACLOCAL = @ACLOCAL@
+AUTOCONF = @AUTOCONF@
+AUTOMAKE = @AUTOMAKE@
+AUTOHEADER = @AUTOHEADER@
+
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@ $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+transform = @program_transform_name@
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+build_alias = @build_alias@
+build_triplet = @build@
+host_alias = @host_alias@
+host_triplet = @host@
+target_alias = @target_alias@
+target_triplet = @target@
+CC = @CC@
+CPP = @CPP@
+CXX = @CXX@
+GLINC = @GLINC@
+GLLIB = @GLLIB@
+GMSGFMT = @GMSGFMT@
+IDL = @IDL@
+KDE_EXTRA_RPATH = @KDE_EXTRA_RPATH@
+KDE_INCLUDES = @KDE_INCLUDES@
+KDE_LDFLAGS = @KDE_LDFLAGS@
+KDE_RPATH = @KDE_RPATH@
+LD = @LD@
+LIBCOMPAT = @LIBCOMPAT@
+LIBCRYPT = @LIBCRYPT@
+LIBDL = @LIBDL@
+LIBJPEG = @LIBJPEG@
+LIBMICO = @LIBMICO@
+LIBOBJS = @LIBOBJS@
+LIBPNG = @LIBPNG@
+LIBPTHREAD = @LIBPTHREAD@
+LIBPYTHON = @LIBPYTHON@
+LIBQIMGIO = @LIBQIMGIO@
+LIBSOCKET = @LIBSOCKET@
+LIBTIFF = @LIBTIFF@
+LIBTOOL = @LIBTOOL@
+LIBUCB = @LIBUCB@
+LIBUTIL = @LIBUTIL@
+LIBXDMCP = @LIBXDMCP@
+LIBZ = @LIBZ@
+LIB_KDECORE = @LIB_KDECORE@
+LIB_KDEUI = @LIB_KDEUI@
+LIB_KFILE = @LIB_KFILE@
+LIB_KFM = @LIB_KFM@
+LIB_KHTML = @LIB_KHTML@
+LIB_KHTMLW = @LIB_KHTMLW@
+LIB_KIMGIO = @LIB_KIMGIO@
+LIB_LIBS = @LIB_LIBS@
+LIB_QT = @LIB_QT@
+LIB_X11 = @LIB_X11@
+LN_S = @LN_S@
+MAKEINFO = @MAKEINFO@
+MICO_INCLUDES = @MICO_INCLUDES@
+MICO_LDFLAGS = @MICO_LDFLAGS@
+MOC = @MOC@
+MSGFMT = @MSGFMT@
+NM = @NM@
+PACKAGE = @PACKAGE@
+PAMINC = @PAMINC@
+PAMLIBPATHS = @PAMLIBPATHS@
+PAMLIBS = @PAMLIBS@
+PASSWDLIB = @PASSWDLIB@
+PYTHONINC = @PYTHONINC@
+PYTHONLIB = @PYTHONLIB@
+QT_INCLUDES = @QT_INCLUDES@
+QT_LDFLAGS = @QT_LDFLAGS@
+RANLIB = @RANLIB@
+USE_NLS = @USE_NLS@
+VERSION = @VERSION@
+XBINDIR = @XBINDIR@
+XGETTEXT = @XGETTEXT@
+XPMINC = @XPMINC@
+XPMLIB = @XPMLIB@
+X_EXTRA_LIBS = @X_EXTRA_LIBS@
+X_INCLUDES = @X_INCLUDES@
+X_LDFLAGS = @X_LDFLAGS@
+X_SERVER = @X_SERVER@
+ac_xdmdir = @ac_xdmdir@
+all_includes = @all_includes@
+all_libraries = @all_libraries@
+install_root = @install_root@
+kde_appsdir = @kde_appsdir@
+kde_bindir = @kde_bindir@
+kde_cgidir = @kde_cgidir@
+kde_confdir = @kde_confdir@
+kde_datadir = @kde_datadir@
+kde_htmldir = @kde_htmldir@
+kde_icondir = @kde_icondir@
+kde_includes = @kde_includes@
+kde_libraries = @kde_libraries@
+kde_locale = @kde_locale@
+kde_mimedir = @kde_mimedir@
+kde_minidir = @kde_minidir@
+kde_partsdir = @kde_partsdir@
+kde_sounddir = @kde_sounddir@
+kde_toolbardir = @kde_toolbardir@
+kde_wallpaperdir = @kde_wallpaperdir@
+qt_includes = @qt_includes@
+qt_libraries = @qt_libraries@
+x_includes = @x_includes@
+x_libraries = @x_libraries@
+xdmconfigsubdir = @xdmconfigsubdir@
+# claim, which subdirectories you want to install
+# you can add here more. This one gets installed 
+bin_PROGRAMS = kmap 
+kmap_SOURCES = compatconfig.cpp opt_misc.cpp opt_font.cpp opt_stealth.cpp opt_log.cpp opt_argshist.cpp opt_hosthist.cpp opt_decoy.cpp opt_path.cpp opt_ping.cpp opt_scan.cpp optionstack.cpp optiontree.cpp optionframe.cpp mainview.cpp nmapview.cpp treeview.cpp scanview.cpp processbase.cpp kmap.cpp main.cpp 
+kmap_LDADD = -lkdeui -lkdecore -lqt -lXext -lX11 $(LIBSOCKET)
+
+EXTRA_DIST = main.cpp kmap.cpp kmap.h kmap.kdelnk kmap.xpm mini-kmap.xpm processbase.cpp processbase.h scanview.cpp scanview.h treeview.cpp treeview.h nmapview.cpp nmapview.h mainview.cpp mainview.h optionframe.cpp optionframe.h optiontree.cpp optiontree.h optionstack.cpp optionstack.h opt_scan.cpp opt_scan.h opt_ping.cpp opt_ping.h opt_path.cpp opt_path.h opt_decoy.cpp opt_decoy.h opt_hosthist.cpp opt_hosthist.h opt_argshist.cpp opt_argshist.h opt_log.cpp opt_log.h opt_stealth.cpp opt_stealth.h opt_font.cpp opt_font.h opt_misc.cpp opt_misc.h compatconfig.cpp compatconfig.h 
+
+####### kdevelop will overwrite this part!!! (end)############
+# this 10 paths are KDE specific. Use them:
+# kde_htmldir       Where your docs should go to. (contains lang subdirs)
+# kde_appsdir       Where your application file (.kdelnk) should go to. 
+# kde_icondir       Where your icon should go to.
+# kde_minidir       Where your mini icon should go to.
+# kde_datadir       Where you install application data. (Use a subdir)
+# kde_locale        Where translation files should go to.(contains lang subdirs)
+# kde_cgidir        Where cgi-bin executables should go to.
+# kde_confdir       Where config files should go to.
+# kde_mimedir       Where mimetypes should go to.
+# kde_toolbardir    Where general toolbar icons should go to.
+# kde_wallpaperdir  Where general wallpapers should go to.
+
+# set the include path for X, qt and KDE
+INCLUDES = $(all_includes)
+
+kmap_METASOURCES =  kmap.moc.cpp mainview.moc.cpp nmapview.moc.cpp opt_argshist.moc.cpp opt_decoy.moc.cpp opt_font.moc.cpp opt_hosthist.moc.cpp opt_log.moc.cpp opt_misc.moc.cpp opt_path.moc.cpp opt_ping.moc.cpp opt_scan.moc.cpp opt_stealth.moc.cpp optionframe.moc.cpp optionstack.moc.cpp optiontree.moc.cpp processbase.moc.cpp scanview.moc.cpp treeview.moc.cpp 
+
+# the library search path. 
+kmap_LDFLAGS = $(all_libraries) $(KDE_RPATH)
+
+# them while "make clean", use CLEANFILES
+DISTCLEANFILES = $(kmap_METASOURCES)
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_HEADER = ../config.h
+CONFIG_CLEAN_FILES = 
+PROGRAMS =  $(bin_PROGRAMS)
+
+
+DEFS = @DEFS@ -I. -I$(srcdir) -I..
+CPPFLAGS = @CPPFLAGS@
+LDFLAGS = @LDFLAGS@
+LIBS = @LIBS@
+kmap_OBJECTS =  compatconfig.o opt_misc.o opt_font.o opt_stealth.o  kmap.moc.o mainview.moc.o nmapview.moc.o opt_argshist.moc.o opt_decoy.moc.o opt_font.moc.o opt_hosthist.moc.o opt_log.moc.o opt_misc.moc.o opt_path.moc.o opt_ping.moc.o opt_scan.moc.o opt_stealth.moc.o optionframe.moc.o optionstack.moc.o optiontree.moc.o processbase.moc.o scanview.moc.o treeview.moc.o \
+opt_log.o opt_argshist.o opt_hosthist.o opt_decoy.o opt_path.o \
+opt_ping.o opt_scan.o optionstack.o optiontree.o optionframe.o \
+mainview.o nmapview.o treeview.o scanview.o processbase.o kmap.o main.o
+kmap_DEPENDENCIES = 
+CXXFLAGS = @CXXFLAGS@
+CXXCOMPILE = $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+LTCXXCOMPILE = $(LIBTOOL) --mode=compile $(CXX) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+CXXLD = $(CXX)
+CXXLINK = $(LIBTOOL) --mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(LDFLAGS) -o $@
+DIST_COMMON =  Makefile.am Makefile.in
+
+
+DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+
+TAR = tar
+GZIP_ENV = --best
+SOURCES = $(kmap_SOURCES)
+OBJECTS = $(kmap_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .cpp .lo .o .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --gnu --include-deps kmap/Makefile
+	cd $(top_srcdir) && perl automoc kmap-0.6.1/kmap/Makefile.in
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-binPROGRAMS:
+
+clean-binPROGRAMS:
+	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+
+distclean-binPROGRAMS:
+
+maintainer-clean-binPROGRAMS:
+
+install-binPROGRAMS: $(bin_PROGRAMS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo " $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	  else :; fi; \
+	done
+
+uninstall-binPROGRAMS:
+	@$(NORMAL_UNINSTALL)
+	list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+kmap: $(kmap_OBJECTS) $(kmap_DEPENDENCIES)
+	@rm -f kmap
+	$(CXXLINK) $(kmap_LDFLAGS) $(kmap_OBJECTS) $(kmap_LDADD) $(LIBS)
+.cpp.o:
+	$(CXXCOMPILE) -c $<
+.cpp.lo:
+	$(LTCXXCOMPILE) -c $<
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS:  $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = kmap
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$d/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+compatconfig.o: compatconfig.cpp compatconfig.h ../config.h
+kmap.o: kmap.cpp kmap.h ../config.h processbase.h mainview.h scanview.h \
+	treeview.h nmapview.h optionframe.h
+kmap.moc.o: kmap.moc.cpp kmap.h ../config.h
+main.o: main.cpp kmap.h ../config.h
+mainview.o: mainview.cpp mainview.h ../config.h scanview.h treeview.h \
+	nmapview.h optionframe.h
+mainview.moc.o: mainview.moc.cpp mainview.h ../config.h scanview.h \
+	treeview.h nmapview.h optionframe.h
+nmapview.o: nmapview.cpp nmapview.h ../config.h
+nmapview.moc.o: nmapview.moc.cpp nmapview.h ../config.h
+opt_argshist.o: opt_argshist.cpp opt_argshist.h ../config.h
+opt_argshist.moc.o: opt_argshist.moc.cpp opt_argshist.h ../config.h
+opt_decoy.o: opt_decoy.cpp opt_decoy.h ../config.h
+opt_decoy.moc.o: opt_decoy.moc.cpp opt_decoy.h ../config.h
+opt_font.o: opt_font.cpp opt_font.h ../config.h
+opt_font.moc.o: opt_font.moc.cpp opt_font.h ../config.h
+opt_hosthist.o: opt_hosthist.cpp opt_hosthist.h ../config.h
+opt_hosthist.moc.o: opt_hosthist.moc.cpp opt_hosthist.h ../config.h
+opt_log.o: opt_log.cpp opt_log.h ../config.h
+opt_log.moc.o: opt_log.moc.cpp opt_log.h ../config.h
+opt_misc.o: opt_misc.cpp opt_misc.h ../config.h
+opt_misc.moc.o: opt_misc.moc.cpp opt_misc.h ../config.h
+opt_path.o: opt_path.cpp opt_path.h ../config.h
+opt_path.moc.o: opt_path.moc.cpp opt_path.h ../config.h
+opt_ping.o: opt_ping.cpp opt_ping.h ../config.h
+opt_ping.moc.o: opt_ping.moc.cpp opt_ping.h ../config.h
+opt_scan.o: opt_scan.cpp opt_scan.h ../config.h
+opt_scan.moc.o: opt_scan.moc.cpp opt_scan.h ../config.h
+opt_stealth.o: opt_stealth.cpp opt_stealth.h ../config.h
+opt_stealth.moc.o: opt_stealth.moc.cpp opt_stealth.h ../config.h
+optionframe.o: optionframe.cpp optionframe.h ../config.h optiontree.h \
+	optionstack.h
+optionframe.moc.o: optionframe.moc.cpp optionframe.h ../config.h
+optionstack.o: optionstack.cpp optionstack.h ../config.h optionframe.h \
+	opt_scan.h opt_ping.h opt_path.h opt_decoy.h opt_hosthist.h \
+	opt_argshist.h opt_log.h opt_stealth.h opt_font.h opt_misc.h
+optionstack.moc.o: optionstack.moc.cpp optionstack.h ../config.h \
+	optionframe.h
+optiontree.o: optiontree.cpp optiontree.h ../config.h optionframe.h
+optiontree.moc.o: optiontree.moc.cpp optiontree.h ../config.h \
+	optionframe.h
+processbase.o: processbase.cpp processbase.h
+processbase.moc.o: processbase.moc.cpp processbase.h
+scanview.o: scanview.cpp scanview.h ../config.h
+scanview.moc.o: scanview.moc.cpp scanview.h ../config.h
+treeview.o: treeview.cpp treeview.h ../config.h
+treeview.moc.o: treeview.moc.cpp treeview.h ../config.h
+
+info-am:
+info: info-am
+dvi-am:
+dvi: dvi-am
+check-am: all-am
+check: check-am
+installcheck-am:
+installcheck: installcheck-am
+install-exec-am: install-binPROGRAMS
+install-exec: install-exec-am
+
+install-data-am: install-data-local
+install-data: install-data-am
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-am
+uninstall-am: uninstall-binPROGRAMS uninstall-local
+uninstall: uninstall-am
+all-am: Makefile $(PROGRAMS)
+all-redirect: all-am
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs:
+	$(mkinstalldirs)  $(DESTDIR)$(bindir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+	-test -z "$(DISTCLEANFILES)" || rm -f $(DISTCLEANFILES)
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-binPROGRAMS mostlyclean-compile \
+		mostlyclean-libtool mostlyclean-tags \
+		mostlyclean-generic
+
+mostlyclean: mostlyclean-am
+
+clean-am:  clean-binPROGRAMS clean-compile clean-libtool clean-tags \
+		clean-generic mostlyclean-am
+
+clean: clean-am
+
+distclean-am:  distclean-binPROGRAMS distclean-compile distclean-libtool \
+		distclean-tags distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-metasources distclean-am
+
+maintainer-clean-am:  maintainer-clean-binPROGRAMS \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-tags maintainer-clean-generic \
+		distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-am
+
+.PHONY: mostlyclean-binPROGRAMS distclean-binPROGRAMS clean-binPROGRAMS \
+maintainer-clean-binPROGRAMS uninstall-binPROGRAMS install-binPROGRAMS \
+mostlyclean-compile distclean-compile clean-compile \
+maintainer-clean-compile mostlyclean-libtool distclean-libtool \
+clean-libtool maintainer-clean-libtool tags mostlyclean-tags \
+distclean-tags clean-tags maintainer-clean-tags distdir info-am info \
+dvi-am dvi check check-am installcheck-am installcheck install-exec-am \
+install-exec install-data-local install-data-am install-data install-am \
+install uninstall-local uninstall-am uninstall all-redirect all-am all \
+installdirs mostlyclean-generic distclean-generic clean-generic \
+maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+
+
+install-data-local:
+	$(mkinstalldirs) $(kde_appsdir)/Applications/
+	$(INSTALL_DATA) kmap.kdelnk $(kde_appsdir)/Applications/kmap.kdelnk
+	$(mkinstalldirs) $(kde_icondir)/
+	$(INSTALL_DATA) kmap.xpm $(kde_icondir)/kmap.xpm
+	$(mkinstalldirs) $(kde_minidir)/
+	$(INSTALL_DATA) mini-kmap.xpm $(kde_minidir)/kmap.xpm
+
+uninstall-local:
+	-rm -f $(kde_appsdir)/Applications/kmap.kdelnk
+	-rm -f $(kde_icondir)/kmap.xpm
+	-rm -f $(kde_minidir)/kmap.xpm
+
+# make messages.po. Move this one to ../po/ and "make merge" in po
+# the -x is for skipping messages already translated in kdelibs
+messages:
+	$(XGETTEXT) -C -ki18n -x $(kde_includes)/kde.pot `find . -name \*.h -o -name \*.cpp -o -name \*.cc` -o ../po/kmap.pot 
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:
+
+
+kmap.moc.cpp: $(srcdir)/kmap.h
+	$(MOC) $(srcdir)/kmap.h -o kmap.moc.cpp
+
+mainview.moc.cpp: $(srcdir)/mainview.h
+	$(MOC) $(srcdir)/mainview.h -o mainview.moc.cpp
+
+nmapview.moc.cpp: $(srcdir)/nmapview.h
+	$(MOC) $(srcdir)/nmapview.h -o nmapview.moc.cpp
+
+opt_argshist.moc.cpp: $(srcdir)/opt_argshist.h
+	$(MOC) $(srcdir)/opt_argshist.h -o opt_argshist.moc.cpp
+
+opt_decoy.moc.cpp: $(srcdir)/opt_decoy.h
+	$(MOC) $(srcdir)/opt_decoy.h -o opt_decoy.moc.cpp
+
+opt_font.moc.cpp: $(srcdir)/opt_font.h
+	$(MOC) $(srcdir)/opt_font.h -o opt_font.moc.cpp
+
+opt_hosthist.moc.cpp: $(srcdir)/opt_hosthist.h
+	$(MOC) $(srcdir)/opt_hosthist.h -o opt_hosthist.moc.cpp
+
+opt_log.moc.cpp: $(srcdir)/opt_log.h
+	$(MOC) $(srcdir)/opt_log.h -o opt_log.moc.cpp
+
+opt_misc.moc.cpp: $(srcdir)/opt_misc.h
+	$(MOC) $(srcdir)/opt_misc.h -o opt_misc.moc.cpp
+
+opt_path.moc.cpp: $(srcdir)/opt_path.h
+	$(MOC) $(srcdir)/opt_path.h -o opt_path.moc.cpp
+
+opt_ping.moc.cpp: $(srcdir)/opt_ping.h
+	$(MOC) $(srcdir)/opt_ping.h -o opt_ping.moc.cpp
+
+opt_scan.moc.cpp: $(srcdir)/opt_scan.h
+	$(MOC) $(srcdir)/opt_scan.h -o opt_scan.moc.cpp
+
+opt_stealth.moc.cpp: $(srcdir)/opt_stealth.h
+	$(MOC) $(srcdir)/opt_stealth.h -o opt_stealth.moc.cpp
+
+optionframe.moc.cpp: $(srcdir)/optionframe.h
+	$(MOC) $(srcdir)/optionframe.h -o optionframe.moc.cpp
+
+optionstack.moc.cpp: $(srcdir)/optionstack.h
+	$(MOC) $(srcdir)/optionstack.h -o optionstack.moc.cpp
+
+optiontree.moc.cpp: $(srcdir)/optiontree.h
+	$(MOC) $(srcdir)/optiontree.h -o optiontree.moc.cpp
+
+processbase.moc.cpp: $(srcdir)/processbase.h
+	$(MOC) $(srcdir)/processbase.h -o processbase.moc.cpp
+
+scanview.moc.cpp: $(srcdir)/scanview.h
+	$(MOC) $(srcdir)/scanview.h -o scanview.moc.cpp
+
+treeview.moc.cpp: $(srcdir)/treeview.h
+	$(MOC) $(srcdir)/treeview.h -o treeview.moc.cpp
+
+distclean-metasources:
+	-rm -f kmap.moc.cpp mainview.moc.cpp nmapview.moc.cpp opt_argshist.moc.cpp opt_decoy.moc.cpp opt_font.moc.cpp opt_hosthist.moc.cpp opt_log.moc.cpp opt_misc.moc.cpp opt_path.moc.cpp opt_ping.moc.cpp opt_scan.moc.cpp opt_stealth.moc.cpp optionframe.moc.cpp optionstack.moc.cpp optiontree.moc.cpp processbase.moc.cpp scanview.moc.cpp treeview.moc.cpp 
+
+# DO_NOT_USE_AUTOMOC
